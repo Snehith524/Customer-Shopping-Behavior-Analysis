@@ -142,3 +142,31 @@ The project follows an end-to-end data analytics pipeline:
           └──────────┬──────────┘
                      ▼
               Business Insights
+
+
+# 📊 Power BI Dashboard
+
+The final analysis was presented through an interactive Power BI dashboard designed to give stakeholders a quick overview of customer behavior, revenue, product categories, subscriptions, and purchasing patterns.
+
+### Dashboard Preview
+
+![Customer Behaviour Dashboard](images/customer-behaviour-dashboard.png)
+
+### Dashboard Highlights
+
+The dashboard includes:
+
+- 📌 Total number of customers
+- 💰 Average purchase amount
+- ⭐ Average review rating
+- 🔄 Subscription status analysis
+- 👥 Gender-based filtering
+- 🛍️ Category-level analysis
+- 🚚 Shipping type filtering
+- 💵 Revenue by category
+- 📦 Sales by category
+- 👴 Age-based revenue analysis
+- 📊 Sales distribution by age
+- 🔎 Interactive slicers and filters
+
+The dashboard was designed to convert the SQL analysis into an interactive visual experience, allowing users to explore different customer segments and product categories dynamically.
