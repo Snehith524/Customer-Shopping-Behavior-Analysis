@@ -169,4 +169,4 @@ The dashboard includes:
 - 📊 Sales distribution by age
 - 🔎 Interactive slicers and filters
 
-The dashboard was designed to convert the SQL analysis into an interactive visual experience, allowing users to explore different customer segments and product categories dynamically.
+The dashboard was designed to convert the SQL analysis into an interactive visual experience, allowing users to explore different customer segments, product categories, shipping methods, and subscription behavior dynamically.
