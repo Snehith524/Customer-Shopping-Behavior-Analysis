@@ -146,149 +146,161 @@ The project follows an end-to-end data analytics pipeline:
 
 # 📊 Power BI Dashboard
 
-The final stage of the project was to transform the SQL analysis into an interactive **Power BI dashboard**. The dashboard was designed from a business-user perspective, focusing on the questions a retail company would ask about customer purchasing behavior, revenue, product performance, subscriptions, and customer demographics.
+The final stage of the project was to transform the SQL analysis into an interactive **Power BI dashboard**. The dashboard was designed from a business-user perspective, focusing on customer purchasing behavior, revenue contribution, product categories, subscription status, shipping preferences, and customer demographics.
 
-## Dashboard Overview
+Rather than presenting SQL results as standalone numbers, the dashboard brings the analysis together into an interactive visual interface that allows stakeholders to explore different customer segments and identify important patterns.
 
-The dashboard provides a consolidated view of customer shopping behavior through **KPI cards, charts, slicers, and interactive filters**.
+---
 
-### 📌 Key Performance Indicators
+## 📌 Dashboard Overview
 
-The dashboard highlights three primary KPIs:
+The Power BI dashboard provides a consolidated view of customer shopping behavior using:
 
-- **3.9K Customers** — Total number of customer purchase records in the dataset.
-- **$59.76 Average Purchase Amount** — Average amount spent per recorded purchase.
-- **3.75 Average Review Rating** — Overall average customer review rating.
+- 📍 KPI Cards
+- 📊 Bar Charts
+- 🍩 Donut Chart
+- 🎛️ Interactive Slicers
+- 🔎 Category Filters
+- 👥 Customer Segmentation
+- 👴 Age-Based Analysis
 
-These KPIs provide a quick snapshot of the overall customer and transaction profile before moving into detailed analysis.
+The dashboard is designed to answer key business questions identified during the SQL analysis and convert analytical results into an easily understandable business view.
+
+---
+
+## 📈 Key Performance Indicators
+
+The dashboard highlights three primary KPIs that provide an immediate overview of the dataset.
+
+| KPI | Value | Description |
+|---|---:|---|
+| 👥 Customer Records | **3.9K** | Total purchase records represented in the dataset |
+| 💰 Average Purchase Amount | **$59.76** | Average recorded purchase amount |
+| ⭐ Average Review Rating | **3.75 / 5** | Overall average customer review rating |
+
+These KPIs provide a quick snapshot of the overall transaction and customer behavior before moving into detailed analysis.
+
+> **Note:** The 3.9K figure represents records in the dataset. It should not automatically be interpreted as 3.9K unique customers unless Customer ID uniqueness is verified.
 
 ---
 
 ## 🎛️ Interactive Filters
 
-The dashboard includes interactive slicers that allow users to explore the data based on different customer and transaction characteristics.
+The dashboard contains interactive slicers that allow users to dynamically explore customer behavior.
 
-### Subscription Status
+### 🔄 Subscription Status
 
-Users can filter between:
+Users can filter the dashboard based on subscription status:
 
-- Yes — Subscribed customers
-- No — Non-subscribed customers
+- **Yes** — Subscribed customers
+- **No** — Non-subscribed customers
 
-### Gender
+This allows stakeholders to compare purchasing behavior between subscribers and non-subscribers.
 
-Users can compare:
+### 👥 Gender
 
-- Male customers
-- Female customers
+The dashboard allows users to filter customers by:
 
-### Product Category
+- **Male**
+- **Female**
 
-The dashboard allows analysis across:
+This supports gender-based comparisons of purchasing and revenue patterns.
 
-- Clothing
-- Accessories
-- Footwear
-- Outerwear
+### 🛍️ Product Category
 
-### Shipping Type
+Customers and purchases can be analyzed across:
 
-Users can also filter customers based on their selected shipping method, including:
+- **Clothing**
+- **Accessories**
+- **Footwear**
+- **Outerwear**
 
-- Standard
-- Express
-- Free Shipping
-- Next Day Air
-- 2-Day Shipping
-- Store Pickup
+This allows stakeholders to investigate category-level sales and revenue performance.
 
-These filters allow stakeholders to move from an overall business view to specific customer segments.
+### 🚚 Shipping Type
+
+The dashboard provides filtering based on shipping method:
+
+- **Standard**
+- **Express**
+- **Free Shipping**
+- **Next Day Air**
+- **2-Day Shipping**
+- **Store Pickup**
+
+This makes it possible to explore whether purchasing behavior differs across shipping preferences.
 
 ---
 
-## 📈 Dashboard Visualizations
+# 📊 Dashboard Visualizations
 
-### 1. Subscription Status
+## 1. 🔄 Subscription Status
 
-A donut chart displays the percentage distribution of subscribed and non-subscribed customers.
+A donut chart displays the distribution of purchase records by subscription status.
 
 The dashboard shows approximately:
 
 - **73% Non-Subscribers**
 - **27% Subscribers**
 
-This provides a clear view of the current subscription penetration within the dataset.
+### Business Interpretation
+
+The majority of records are associated with non-subscribers, indicating that subscription adoption is considerably lower than the non-subscriber share represented in the dataset.
+
+This can help a retail business investigate opportunities for:
+
+- Subscription promotion
+- Customer retention
+- Loyalty programs
+- Subscriber conversion
 
 ---
 
-### 2. Revenue by Category
+## 2. 💰 Revenue by Category
 
-A category-level revenue chart compares the total purchase revenue generated by each product category.
+The **Revenue by Category** visualization compares the total recorded purchase revenue generated across product categories.
 
-The major categories analyzed are:
+The categories include:
 
 - Clothing
 - Accessories
 - Footwear
 - Outerwear
 
+### Key Observation
+
 **Clothing generates the highest recorded revenue**, followed by Accessories, Footwear, and Outerwear.
 
-This visualization can help businesses identify categories that contribute most to overall revenue.
+### Business Interpretation
+
+The category-level revenue comparison helps identify which product categories contribute the most to overall recorded sales value.
+
+This information can support decisions related to:
+
+- Inventory planning
+- Product promotion
+- Category management
+- Marketing allocation
 
 ---
 
-### 3. Sales by Category
+## 3. 🛒 Sales by Category
 
-The sales-by-category visualization compares the number of recorded purchases across product categories.
+The **Sales by Category** visualization compares the number of recorded purchases across product categories.
+
+### Key Observation
 
 **Clothing has the highest sales volume**, followed by Accessories and Footwear.
 
-Comparing sales volume with revenue helps distinguish between categories that sell frequently and categories that generate higher revenue per purchase.
+### Business Interpretation
 
----
+Comparing sales volume with revenue provides a more complete understanding of category performance.
 
-### 4. Revenue by Age Group
-
-The dashboard includes an age-based revenue analysis to understand how purchasing value differs across customer age groups.
-
-Customers are grouped into defined age segments to make demographic comparisons easier.
-
-This helps identify which customer age groups contribute more to overall recorded revenue.
-
----
-
-### 5. Sales by Age Group
-
-A separate visualization compares the number of purchases across customer ages.
-
-This allows the business to distinguish between:
-
-- Customer groups with high purchase frequency
-- Customer groups generating higher revenue
-- Potential high-value customer segments
-
-Using both **Revenue by Age Group** and **Sales by Age Group** provides a more complete view than relying on revenue alone.
-
----
-
-## 🔍 Dashboard Analysis Approach
-
-The dashboard was not designed simply to display charts. Each visualization was connected to a business question identified during the SQL analysis.
-
-The analytical flow was:
+For example:
 
 ```text
-Business Question
-       ↓
-SQL Analysis
-       ↓
-Identify Important Metrics
-       ↓
-Select Appropriate Visualization
-       ↓
-Build Power BI Dashboard
-       ↓
-Apply Interactive Filters
-       ↓
-Interpret Business Insights
+Sales Volume
+     +
+Revenue
+     ↓
+Category Performance
