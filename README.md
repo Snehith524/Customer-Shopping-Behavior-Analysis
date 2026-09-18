@@ -148,10 +148,10 @@ The project follows an end-to-end data analytics pipeline:
 
 The final analysis was presented through an interactive Power BI dashboard designed to give stakeholders a quick overview of customer behavior, revenue, product categories, subscriptions, and purchasing patterns.
 
+
 ### Dashboard Preview
 
-![Customer Behaviour Dashboard](customer-behaviour-dashboard.png)
-
+![Customer Behaviour Dashboard](./customer-behaviour-dashboard.png)
 ### Dashboard Highlights
 
 The dashboard includes:
