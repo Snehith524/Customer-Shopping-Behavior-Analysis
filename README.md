@@ -262,7 +262,6 @@ Comparing sales volume with revenue provides a more complete understanding of ca
 
 For example:
 
-```text
 Sales Volume
      +
 Revenue
