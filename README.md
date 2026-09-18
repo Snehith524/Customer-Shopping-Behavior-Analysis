@@ -150,7 +150,7 @@ The final analysis was presented through an interactive Power BI dashboard desig
 
 ### Dashboard Preview
 
-(customer-behaviour-dashboard.png)
+![Customer Behaviour Dashboard](customer-behaviour-dashboard.png)
 
 ### Dashboard Highlights
 
