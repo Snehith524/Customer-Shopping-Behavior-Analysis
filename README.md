@@ -107,42 +107,6 @@ The dataset contains **3,900 customer shopping records** and **18 attributes** d
 
 ---
 
-# 🔄 Project Workflow
-
-The project follows an end-to-end data analytics pipeline:
-
-```text
-                RAW DATASET
-                     │
-                     ▼
-             Python / Pandas
-                     │
-                     ▼
-          Data Inspection & Validation
-                     │
-                     ▼
-              MySQL Database
-                     │
-                     ▼
-               SQL Analysis
-                     │
-                     ▼
-             Business Questions
-                     │
-                     ▼
-               Power BI
-                     │
-                     ▼
-          Interactive Dashboard
-                     │
-          ┌──────────┴──────────┐
-          ▼                     ▼
-     Analytical Report      Presentation
-          │                     │
-          └──────────┬──────────┘
-                     ▼
-              Business Insights
-
 
 # 📊 Power BI Dashboard
 
@@ -304,3 +268,41 @@ Sales Volume
 Revenue
      ↓
 Category Performance
+
+
+# 🔄 Project Workflow
+
+The project follows an end-to-end data analytics pipeline:
+
+```text
+                RAW DATASET
+                     │
+                     ▼
+             Python / Pandas
+                     │
+                     ▼
+          Data Inspection & Validation
+                     │
+                     ▼
+              MySQL Database
+                     │
+                     ▼
+               SQL Analysis
+                     │
+                     ▼
+             Business Questions
+                     │
+                     ▼
+               Power BI
+                     │
+                     ▼
+          Interactive Dashboard
+                     │
+          ┌──────────┴──────────┐
+          ▼                     ▼
+     Analytical Report      Presentation
+          │                     │
+          └──────────┬──────────┘
+                     ▼
+              Business Insights
+
